@@ -1,11 +1,22 @@
+import About from "@/components/About";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import ProjectsPreview from "@/components/ProjectsPreview";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home | Syed Huzaifa",
-  description:
-    "Huzaifa: I love to build things that help - Problem Solver and Entrepreneur",
+  description: "",
 };
 
 export default function Home() {
-  return <section className="min-h-screen"></section>;
+  return (
+    <div className="bg-mainBg">
+      <Navbar />
+
+      <HeroSection />
+      <ProjectsPreview />
+      <About />
+    </div>
+  );
 }
